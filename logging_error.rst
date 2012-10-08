@@ -18,3 +18,18 @@ Exceptions
 Logging module
 ==============
 
+- Handler
+- Formatter
+- Logger
+- Filter
+
+.. add a graphviz graph
+
+.. digraph:: logging
+   
+     log -> logger
+     logger_handler -> root_logger
+     log -> filter
+     filter -> root_logger [label="yes"]
+     filter -> discarded [label="no"]
+

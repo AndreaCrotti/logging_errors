@@ -25,7 +25,7 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.viewcode']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.viewcode', 'hieroglyph', 'sphinx.ext.graphviz']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -166,6 +166,16 @@ html_static_path = ['_static']
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'LoggingErrorstalkdoc'
 
+
+slide_theme = 'single-level'
+# slide_theme_options = {'custom_css':'custom.css'}
+
+slide_link_html_to_slides = True
+slide_link_html_sections_to_slides = True
+slide_relative_path = "./logging_errors_slides/"
+
+slide_link_to_html = True
+slide_html_relative_path = "../"
 
 # -- Options for LaTeX output --------------------------------------------------
 
